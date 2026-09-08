@@ -1,0 +1,28 @@
+# Track Linux v0.1 — optional packages
+#
+# These are deliberately NOT installed by install.sh.
+# Move a package into workstation.txt when you decide the feature earns
+# a place in the system.
+
+# Bluetooth hardware support.
+# Installing these alone does not require keeping Bluetooth enabled.
+# To use it:
+#   sudo systemctl enable --now bluetooth.service
+bluez
+bluez-utils
+
+# Thunderbolt device authorization / management.
+bolt
+
+# Laptop power-profile service.
+power-profiles-daemon
+
+# Firmware updater. Run on demand with fwupdmgr.
+fwupd
+
+# Intel thermal management daemon.
+# Persistent when enabled; do not add unless testing shows it benefits the X9.
+thermald
+
+# System monitor, useful on demand.
+btop

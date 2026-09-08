@@ -1,0 +1,49 @@
+# Track Linux v0.1 — workstation packages
+# No desktop environment, panel, dock, widget shell, wallpaper daemon,
+# clipboard daemon, or graphical control center is installed.
+
+# Wayland compositor + X11 compatibility
+hyprland
+xorg-xwayland
+
+# Desktop portals / privilege prompts
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+hyprpolkitagent
+
+# Audio
+pipewire
+pipewire-audio
+pipewire-alsa
+pipewire-pulse
+wireplumber
+
+# Intel graphics / media
+mesa
+vulkan-intel
+intel-media-driver
+
+# Qt applications on Wayland
+qt5-wayland
+qt6-wayland
+
+# Minimal user interface
+fuzzel
+mako
+foot
+firefox
+
+# Hardware controls used by keybindings.lua
+brightnessctl
+
+# On-demand Wayland utilities — no persistent daemon
+xdg-utils
+wl-clipboard
+grim
+slurp
+wev
+
+# Fonts — installed files only; no background service
+noto-fonts
+noto-fonts-emoji

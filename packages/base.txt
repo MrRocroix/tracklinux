@@ -1,0 +1,22 @@
+# Track Linux v0.1 — base packages
+# Intended for the ThinkPad X9 after a minimal Arch installation.
+# Blank lines and lines beginning with # are ignored by install.sh.
+
+base
+linux
+
+# Firmware / CPU
+#
+# Start with Arch's default firmware set for reliable first-boot hardware
+# support. Firmware files consume disk space but do not become persistent
+# background processes. After hardware validation on the actual X9, this can
+# be reduced to only the vendor firmware the machine really needs.
+linux-firmware
+intel-ucode
+sof-firmware
+
+# Core administration / network
+networkmanager
+sudo
+git
+openssh
